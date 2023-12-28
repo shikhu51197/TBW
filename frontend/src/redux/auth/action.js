@@ -52,7 +52,7 @@ export const signupfunc =
   (dispatch) => {
     dispatch(get_singup_request());
     axios
-      .post("http://localhost:4000/api/auth/signup", {
+      .post("https://tbw.vercel.app/api/auth/signup", {
         name, email, password, username, phone
       })
       .then((res) => {
@@ -70,7 +70,7 @@ export const loginfunc =
     dispatch(get_login_request());
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/auth/login",
+        "https://tbw.vercel.app/api/auth/login",
         {
           email,
           password,
