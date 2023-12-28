@@ -124,7 +124,7 @@ Run the development servers:
 
      Backend:
     cd backend
-    npm start
+    npm run dev
 
     Frontend:
       cd frontend
